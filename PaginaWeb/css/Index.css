@@ -1,0 +1,114 @@
+/* Estilos por etiquetas */
+body {
+    background-color: #1e2124; /* GRIS OSCURO SUAVE (NO NEGRO) */
+    color: #f0f0f0; /* Blanco roto para no cansar la vista */
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Nav con ID */
+#menu-principal {
+    background-color: #121416; /* Gris más oscuro que el fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #2ecc71; /* VERDE ESMERALDA SUAVE */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#titulo-nav {
+    color: #ffffff;
+    margin: 0;
+    font-style: italic;
+}
+
+#titulo-nav span {
+    color: #2ecc71;
+}
+
+#lista-navegacion {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#lista-navegacion li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+
+#lista-navegacion li a:hover {
+    color: #2ecc71;
+    text-shadow: 0 0 5px #2ecc71;
+}
+
+/* Header */
+#cabecera-principal {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #282b30; /* Otro tono de gris */
+    border-bottom: 1px solid #2ecc71;
+}
+
+#gran-titulo {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 4px 4px 0px #2ecc71; /* Sombra verde desplazada */
+}
+
+/* Secciones principales */
+#contenedor-web {
+    padding: 50px 10%;
+}
+
+#clasificatorio {
+    background-color: #2f3136; /* Gris intermedio */
+    padding: 35px;
+    border: 2px solid #2ecc71; /* Borde verde suave */
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px rgba(46, 204, 113, 0.2); /* Sombra verde suave */
+}
+
+#clasificatorio h2 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+#pie-pagina {
+    background-color: #121416;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 4px solid #2ecc71;
+    margin-top: 50px;
+}
+
+#redes-sociales img {
+    width: 35px;
+    margin: 15px;
+    padding: 8px;
+    background-color: #ffffff; /* Fondo blanco para los logos */
+    border: 2px solid #2ecc71;
+    border-radius: 50%; /* Logos circulares */
+    transition: 0.3s;
+}
+
+#redes-sociales img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #2ecc71;
+}
+
+#copyright {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: #72767d;
+}
