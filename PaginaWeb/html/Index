@@ -1,0 +1,34 @@
+<nav class="navbar">
+    <div class="logo">FIFA<span>26</span> Masters</div>
+    <ul class="nav-links">
+        <li><a href="#inicio">Index</a></li>
+        <li><a href="#cartel">Cartel</a></li>
+        <li><a href="#clasificatorio">Clasificatorio</a></li> <li><a href="#inscripcion">Inscripción</a></li>
+        <li><a href="#video">Trailer</a></li>
+        <li><a href="#premios">Premios</a></li>
+    </ul>
+</nav>
+
+<section id="clasificatorio" class="qualifiers">
+    <div class="section-title">
+        <h2>Fase de Clasificatorios</h2>
+        <p>Gana tu lugar en la gran final presencial</p>
+    </div>
+    <div class="timeline">
+        <div class="step">
+            <span class="date">15 FEB</span>
+            <h3>Open Qualifier #1</h3>
+            <p>128 Jugadores - Formato Eliminación Directa (Bo1)</p>
+        </div>
+        <div class="step">
+            <span class="date">22 FEB</span>
+            <h3>Open Qualifier #2</h3>
+            <p>128 Jugadores - Formato Eliminación Directa (Bo1)</p>
+        </div>
+        <div class="step highlight">
+            <span class="date">01 MAR</span>
+            <h3>Last Chance</h3>
+            <p>Repesca para los mejores 16 no clasificados</p>
+        </div>
+    </div>
+</section>
