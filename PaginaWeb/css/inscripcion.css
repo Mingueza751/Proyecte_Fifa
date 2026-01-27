@@ -116,75 +116,130 @@ body {
     font-size: 0.8rem; /* Letra pequeña */
     color: #72767d; /* Gris apagado */
 }
-
-/* ESTILOS DEL FORMULARIO DE INSCRIPCIÓN */
-
-#inscripcion {
-    padding: 50px 10%;
-    margin: 40px auto;
-    max-width: 700px;
-    background-color: #282b30; /* Fondo gris intermedio */
-    border: 2px solid #2ecc71; /* Borde verde esmeralda */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra de profundidad */
+#seccion-inscripcion {
+    background-color: #282b30; /* Gris intermedio para resaltar el formulario */
+    padding: 40px; /* Margen interno para que nada toque los bordes */
+    border: 3px solid #2ecc71; /* Borde verde esmeralda característico */
+    border-radius: 15px; /* Esquinas redondeadas */
+    max-width: 650px; /* Ancho máximo para que sea cómodo de leer */
+    margin: 40px auto; /* Centra el formulario y lo separa del nav/footer */
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.2); /* Brillo suave verde */
 }
 
 #titulo-inscripcion {
-    color: #2ecc71;
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: center; /* Centra el título */
+    color: #2ecc71; /* Color verde neón */
 }
 
 #instrucciones-registro {
-    text-align: center;
-    color: #72767d;
-    margin-bottom: 30px;
+    text-align: center; /* Centra el texto de ayuda */
+    color: #72767d; /* Gris apagado */
+    margin-bottom: 30px; /* Espacio antes de empezar los campos */
 }
 
-/* Estilo de las etiquetas (labels) */
-#formulario-registro label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #ffffff;
+#formulario-fifa label {
+    display: block; /* Cada etiqueta ocupa una línea entera */
+    margin-top: 15px; /* Espacio superior para no amontonarse */
+    font-weight: bold; /* Texto resaltado */
 }
 
-/* Estilo de los campos de entrada (inputs y select) */
-#formulario-registro input, 
-#formulario-registro select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    background-color: #1e2124; /* Fondo oscuro para el campo */
-    border: 1px solid #72767d; /* Borde gris apagado */
-    color: #ffffff;
-    border-radius: 5px;
-    box-sizing: border-box; /* Asegura que el padding no ensanche el campo */
+/* Estilo para todos los campos de entrada */
+#formulario-fifa input, 
+#formulario-fifa select {
+    width: 100%; /* Ocupan todo el ancho del contenedor */
+    padding: 12px; /* Espacio interno para escribir bien */
+    margin-top: 5px; /* Separación con su etiqueta */
+    background-color: #121416; /* Fondo gris casi negro */
+    border: 1px solid #2ecc71; /* Borde verde fino */
+    color: #ffffff; /* Texto blanco al escribir */
+    border-radius: 5px; /* Esquinas suaves */
+    box-sizing: border-box; /* Evita que el padding ensanche el campo */
 }
 
-/* Efecto cuando haces clic en un campo */
-#formulario-registro input:focus {
-    outline: none;
-    border-color: #2ecc71; /* El borde se vuelve verde al escribir */
-    box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+/* Diseño específico para la fila de tarjeta bancaria */
+#datos-tarjeta {
+    display: flex; /* Pone caducidad y cvv en la misma fila */
+    gap: 20px; /* Espacio entre las dos columnas */
 }
 
-/* Botón de envío */
-#boton-enviar {
-    width: 100%;
+#col-caducidad, #col-cvv {
+    flex: 1; /* Hace que ambas columnas midan lo mismo */
+}
+
+/* Estilo del bloque de descarga */
+#descarga-menores {
+    margin-top: 25px;
     padding: 15px;
-    background-color: #2ecc71; /* Fondo verde */
-    color: #121416; /* Texto oscuro para contraste */
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s ease;
-    border-radius: 5px;
+    background-color: #1e2124; /* Gris oscuro de fondo */
+    border: 1px dashed #2ecc71; /* Borde de líneas discontinuas */
+    text-align: center;
 }
 
-#boton-enviar:hover {
-    background-color: #ffffff; /* El botón cambia a blanco al pasar el ratón */
-    box-shadow: 0 0 15px #ffffff;
+#enlace-descarga {
+    color: #2ecc71;
+    font-weight: bold;
+    text-decoration: underline; /* Subrayado para indicar que es un link */
+}
+
+/* Estilo de los Checkboxes (Captcha y Términos) */
+#bloque-captcha, #bloque-terminos {
+    display: flex; /* Alinea el cuadro con el texto */
+    align-items: center; /* Centrado vertical */
+    gap: 10px; /* Separación entre el cuadro y el texto */
+    margin-top: 15px;
+}
+
+#bloque-captcha input, #bloque-terminos input {
+    width: auto; /* Evita que el checkbox ocupe todo el ancho */
+}
+
+/* Botón de Finalizar */
+#boton-registro {
+    width: 100%; /* Botón grande */
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #2ecc71; /* Color verde */
+    color: #121416; /* Texto oscuro para contraste */
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase; /* Mayúsculas */
+    cursor: pointer;
+    transition: 0.3s; /* Animación suave */
+}
+
+#boton-registro:hover {
+    background-color: #ffffff; /* El botón se vuelve blanco al pasar el ratón */
+    box-shadow: 0 0 15px #ffffff; /* Brillo blanco */
+}
+
+#bloque-subida {
+    margin-top: 25px; /* Espacio superior para separarlo de la descarga */
+    padding: 20px;
+    background-color: #121416; /* Fondo oscuro igual que los inputs */
+    border: 1px solid #2ecc71; /* Borde verde neón */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+#bloque-subida label {
+    margin-bottom: 15px; /* Espacio entre el texto y el botón de examinar */
+    color: #2ecc71; /* Texto en verde */
+}
+
+/* Estilo del botón de elegir archivo que pone el navegador */
+#archivo-autorizacion {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Quitamos el borde por defecto */
+    color: #ffffff; /* Texto del nombre del archivo en blanco */
+    cursor: pointer;
+}
+
+#aviso-subida {
+    font-size: 0.8rem; /* Letra pequeña para el aviso */
+    color: #72767d; /* Gris apagado */
+    margin-top: 10px;
+}
+
+/* Efecto al pasar el ratón por el área de subida */
+#bloque-subida:hover {
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.4); /* Resplandor verde al pasar el ratón */
 }

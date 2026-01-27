@@ -19,11 +19,13 @@
         </ul>
     </nav>
 
-   <section id="inscripcion">
+<main id="contenedor-web">
+    <section id="seccion-inscripcion">
         <h2 id="titulo-inscripcion">Formulario de Inscripción</h2>
         <p id="instrucciones-registro">Completa tus datos para reservar tu plaza en el torneo.</p>
-        
-        <form id="formulario-registro">
+
+        <form id="formulario-fifa">
+            
             <div id="campo-nombre">
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre real" required>
@@ -39,6 +41,16 @@
                 <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
             </div>
 
+            <div id="campo-edad">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="12" max="99" required>
+            </div>
+
+            <div id="campo-telefono">
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600123456" required>
+            </div>
+
             <div id="campo-plataforma">
                 <label for="consola">Plataforma:</label>
                 <select id="consola" name="consola">
@@ -47,6 +59,50 @@
                     <option value="pc">PC</option>
                 </select>
             </div>
+
+            <div id="bloque-bancario">
+                <label for="cuenta">Número de Cuenta (IBAN):</label>
+                <input type="text" id="cuenta" name="cuenta" placeholder="ES00 0000..." required>
+
+                <div id="datos-tarjeta">
+                    <div id="col-caducidad">
+                        <label for="caducidad">Caducidad:</label>
+                        <input type="text" id="caducidad" name="caducidad" placeholder="MM/AA" required>
+                    </div>
+                    <div id="col-cvv">
+                        <label for="cvv">CVV:</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+                    </div>
+                </div>
+            </div>
+
+            <div id="descarga-menores">
+                <p>¿Eres menor de edad?</p>
+                <a href="../documentos/autorizacón.pdf" download id="enlace-descarga">
+                    Descargar Autorización (.PDF)
+                </a>
+            </div>
+
+            <div id="bloque-subida">
+                <label for="archivo-autorizacion">Sube aquí tu autorización firmada (PDF o Imagen):</label>
+                <input type="file" id="archivo-autorizacion" name="archivo-autorizacion" accept=".pdf, .jpg, .png" required>
+                <p id="aviso-subida">Formato permitido: PDF, JPG o PNG. Máximo 5MB.</p>
+            </div>
+
+            <div id="bloque-captcha">
+                <input type="checkbox" id="captcha" required>
+                <label for="captcha">No soy un robot</label>
+            </div>
+
+            <div id="bloque-terminos">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones de la FIFA Cup Masters</label>
+            </div>
+
+            <button type="submit" id="boton-registro">Finalizar Inscripción</button>
+        </form>
+    </section>
+</main>
 
             <button type="submit" id="boton-enviar">ENVIAR INSCRIPCIÓN</button>
         </form>
