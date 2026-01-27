@@ -1,0 +1,98 @@
+body {
+    background-color: #1e2124; /* Color de fondo gris grafito */
+    color: #f0f0f0; /* Color de texto blanco hueso */
+    margin: 0; /* Elimina márgenes exteriores */
+    font-family: 'Segoe UI', sans-serif; /* Tipo de letra del documento */
+}
+
+#menu-principal {
+    background-color: #121416; /* Color gris oscuro para resaltar el nav */
+    display: flex; /* Alineación flexible para separar elementos */
+    justify-content: space-between; /* Envía el título a la izquierda y links a la derecha */
+    align-items: center; /* Alineación vertical perfecta */
+    padding: 15px 5%; /* Relleno lateral e interno */
+    position: static; /* El menú no se desplaza con el scroll */
+    border-bottom: 3px solid #2ecc71; /* Línea decorativa verde esmeralda */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar relieve */
+}
+
+#titulo-nav {
+    color: #ffffff; /* Letras blancas para el nombre del torneo */
+    margin: 0; 
+    font-style: italic; /* Texto inclinado deportivo */
+}
+
+#titulo-nav span {
+    color: #2ecc71; /* Color verde para resaltar el año 26 */
+}
+
+#lista-navegacion {
+    display: flex; /* Coloca los elementos de la lista en fila */
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+}
+
+#lista-navegacion li a {
+    color: #ffffff; /* Texto de los enlaces en blanco */
+    text-decoration: none; /* Quita el subrayado azul */
+    font-weight: bold; /* Texto resaltado en negrita */
+    margin-left: 20px; /* Separación horizontal entre botones */
+    padding: 5px 10px;
+    transition: 0.3s ease; /* Suaviza el cambio de color en el hover */
+}
+
+#lista-navegacion li a:hover {
+    color: #2ecc71; /* El texto se vuelve verde al pasar el ratón */
+    text-shadow: 0 0 5px #2ecc71; /* Añade un brillo verde al texto */
+}
+
+#contenedor-web {
+    padding: 50px 10%; /* Espacio para que el video no pegue a los bordes */
+    text-align: center; /* Centra el marco del video en la pantalla */
+}
+
+#marco-video {
+    display: inline-block; /* Ajusta el bloque al tamaño del reproductor */
+    background-color: #000000; /* Fondo negro para evitar fugas de luz */
+    padding: 10px; /* Espacio entre el video y el borde verde */
+    border: 3px solid #2ecc71; /* Borde verde característico del torneo */
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.4); /* Resplandor neón verde */
+    max-width: 800px; /* Limita el ancho máximo para que no se vea gigante */
+    width: 100%; /* Permite que sea pequeño en pantallas pequeñas */
+}
+
+#reproductor-oficial {
+    width: 100%; /* El video ocupa todo el espacio del marco */
+    height: auto; /* Mantiene la proporción de pantalla 16:9 */
+    display: block; /* Elimina espacios extra debajo del video */
+}
+
+#pie-pagina {
+    background-color: #121416; /* Color oscuro para el pie de página */
+    color: #ffffff; 
+    text-align: center; /* Centra textos y redes sociales */
+    padding: 60px 20px; 
+    border-top: 4px solid #2ecc71; /* Línea verde de separación */
+    margin-top: 50px; /* Separación con el contenido superior */
+}
+
+#redes-sociales img {
+    width: 35px; /* Tamaño de los iconos de redes */
+    margin: 15px;
+    padding: 8px;
+    background-color: #ffffff; /* Fondo blanco para resaltar los logos */
+    border: 2px solid #2ecc71; /* Borde circular verde */
+    border-radius: 50%; /* Redondea los iconos completamente */
+    transition: 0.3s; /* Animación de movimiento suave */
+}
+
+#redes-sociales img:hover {
+    transform: translateY(-5px); /* Sube el icono 5 píxeles en el hover */
+    box-shadow: 0 5px 15px #2ecc71; /* Brillo verde intenso */
+}
+
+#copyright {
+    margin-top: 25px;
+    font-size: 0.8rem; /* Tamaño de letra reducido */
+    color: #72767d; /* Gris apagado para el texto legal */
+}
