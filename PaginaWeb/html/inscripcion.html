@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FIFA Masters 2026</title>
-    <link rel="stylesheet" href="../css/cartel.css">
+    <link rel="stylesheet" href="../css/inscripcion.css">
 </head>
 <body>
 
@@ -19,26 +19,37 @@
         </ul>
     </nav>
 
-   <section id="seccion-cartel">
-        <h2 id="titulo-seccion-cartel">Cartel Oficial del Torneo</h2>
-        <div id="contenedor-imagen-cartel">
-            <img src="../../Cartel/" alt="Cartel FIFA 26" id="imagen-cartel">
-        </div>
-    </section>
+   <section id="inscripcion">
+        <h2 id="titulo-inscripcion">Formulario de Inscripción</h2>
+        <p id="instrucciones-registro">Completa tus datos para reservar tu plaza en el torneo.</p>
+        
+        <form id="formulario-registro">
+            <div id="campo-nombre">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre real" required>
+            </div>
 
-    <section id="seccion-bando">
-        <h2 id="titulo-seccion-bando">Bando Informativo</h2>
-        <div id="caja-texto-bando">
-            <h3 id="encabezado-bando">¡ATENCIÓN JUGADORES!</h3>
-            <p>Por orden de la organización del <strong>FIFA Masters Cup 2026</strong>, se hace saber:</p>
-            <p>Que las inscripciones quedan abiertas para todos los niveles. El torneo se regirá por las normas de fair play de la comunidad.</p>
-            <ul id="lista-normas-bando">
-                <li>Lugar: Polideportivo Municipal / Online</li>
-                <li>Fecha límite: 15 de febrero de 2026</li>
-                <li>Obligatorio: Traer mando propio (si es presencial)</li>
-            </ul>
-            <p id="despedida-bando">Fdo: El Comité Organizador.</p>
-        </div>
+            <div id="campo-gamertag">
+                <label for="gamertag">Gamertag (ID de Consola):</label>
+                <input type="text" id="gamertag" name="gamertag" placeholder="Ej: FIFA_Player_99" required>
+            </div>
+
+            <div id="campo-email">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div id="campo-plataforma">
+                <label for="consola">Plataforma:</label>
+                <select id="consola" name="consola">
+                    <option value="ps5">PlayStation 5</option>
+                    <option value="xbox">Xbox Series X/S</option>
+                    <option value="pc">PC</option>
+                </select>
+            </div>
+
+            <button type="submit" id="boton-enviar">ENVIAR INSCRIPCIÓN</button>
+        </form>
     </section>
 
     <footer id="pie-pagina">
