@@ -1,0 +1,58 @@
+/* Aseguramos que el footer ocupe todo el ancho y tenga fondo negro */
+#pie-pagina {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    padding-top: 0; /* Eliminamos padding superior si lo hubiera para que los logos toquen el borde */
+    text-align: center;
+    overflow: hidden; /* Evita scrolls horizontales indeseados */
+}
+
+/* Contenedor de los logos: Flexbox para distribuir el espacio */
+.fondo-patrocinadores {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Distribuye los logos ocupando todo el ancho */
+    align-items: center; /* Los centra verticalmente */
+    flex-wrap: wrap; /* Permite que bajen de línea en pantallas pequeñas */
+    background-color: #000; /* Fondo negro */
+    padding: 20px 10px; /* Espacio arriba/abajo y a los lados */
+    box-sizing: border-box;
+}
+
+/* Estilo para TODAS las imágenes dentro de patrocinadores */
+.fondo-patrocinadores img {
+    height: 50px; /* ALTO FIJO: Esto hace que todos se vean del mismo "tamaño" */
+    width: auto;  /* El ancho se ajusta solo para no deformar el logo */
+    margin: 10px; /* Un poco de separación entre ellos */
+    object-fit: contain; /* Asegura que la imagen se vea completa */
+    
+    /* Opcional: Filtro para que se vean todos blancos o grises y sea más elegante */
+    /* filter: grayscale(100%) brightness(200%); */ 
+}
+
+/* Resto de estilos del footer (Contacto, Redes, etc.) */
+#contacto-dudas {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#redes-sociales {
+    margin: 20px 0;
+}
+
+#redes-sociales img {
+    width: 40px; /* Tamaño específico para iconos sociales */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#redes-sociales img:hover {
+    transform: scale(1.1); /* Pequeño efecto zoom al pasar el ratón */
+}
+
+#copyright {
+    font-size: 0.8rem;
+    color: #888;
+    padding-bottom: 20px;
+}
