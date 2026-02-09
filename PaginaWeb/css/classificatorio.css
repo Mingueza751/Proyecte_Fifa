@@ -66,32 +66,61 @@ body {
     display: block; /* Evita espacios vacíos debajo de la foto */
 }
 
+/* Aseguramos que el footer ocupe todo el ancho y tenga fondo negro */
 #pie-pagina {
-    background-color: #121416; /* Fondo oscuro para el footer */
-    color: #ffffff; 
-    text-align: center; /* Centra todo el texto y logos */
-    padding: 60px 20px; 
-    border-top: 4px solid #2ecc71; /* Línea verde superior */
-    margin-top: 50px; /* Separación con el contenido de arriba */
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    padding-top: 0; /* Eliminamos padding superior si lo hubiera para que los logos toquen el borde */
+    text-align: center;
+    overflow: hidden; /* Evita scrolls horizontales indeseados */
+}
+
+/* Contenedor de los logos: Flexbox para distribuir el espacio */
+.fondo-patrocinadores {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Distribuye los logos ocupando todo el ancho */
+    align-items: center; /* Los centra verticalmente */
+    flex-wrap: wrap; /* Permite que bajen de línea en pantallas pequeñas */
+    background-color: #000; /* Fondo negro */
+    padding: 20px 10px; /* Espacio arriba/abajo y a los lados */
+    box-sizing: border-box;
+}
+
+/* Estilo para TODAS las imágenes dentro de patrocinadores */
+.fondo-patrocinadores img {
+    height: 50px; /* ALTO FIJO: Esto hace que todos se vean del mismo "tamaño" */
+    width: auto;  /* El ancho se ajusta solo para no deformar el logo */
+    margin: 10px; /* Un poco de separación entre ellos */
+    object-fit: contain; /* Asegura que la imagen se vea completa */
+    
+    /* Opcional: Filtro para que se vean todos blancos o grises y sea más elegante */
+    /* filter: grayscale(100%) brightness(200%); */ 
+}
+
+/* Resto de estilos del footer (Contacto, Redes, etc.) */
+#contacto-dudas {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#redes-sociales {
+    margin: 20px 0;
 }
 
 #redes-sociales img {
-    width: 35px; /* Tamaño de los iconos sociales */
-    margin: 15px;
-    padding: 8px;
-    background-color: #ffffff; /* Fondo blanco para resaltar logos */
-    border: 2px solid #2ecc71; /* Borde verde circular */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    transition: 0.3s; /* Animación de movimiento */
+    width: 40px; /* Tamaño específico para iconos sociales */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 #redes-sociales img:hover {
-    transform: translateY(-5px); /* El logo sube al pasar el ratón */
-    box-shadow: 0 5px 15px #2ecc71; /* Brillo verde intenso */
+    transform: scale(1.1); /* Pequeño efecto zoom al pasar el ratón */
 }
 
 #copyright {
-    margin-top: 25px;
-    font-size: 0.8rem; /* Tamaño de letra pequeño */
-    color: #72767d; /* Gris apagado para el texto legal */
+    font-size: 0.8rem;
+    color: #888;
+    padding-bottom: 20px;
 }
