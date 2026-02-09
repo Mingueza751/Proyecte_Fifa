@@ -1,0 +1,97 @@
+body {
+    background-color: #1e2124; /* Gris oscuro para el fondo general */
+    color: #f0f0f0; /* Blanco suave para el texto */
+    margin: 0; /* Elimina espacios en los bordes del navegador */
+    font-family: 'Segoe UI', sans-serif; /* Define la tipografía de la web */
+}
+
+#menu-principal {
+    background-color: #121416; /* Gris más oscuro para el nav */
+    display: flex; /* Alinea logo y lista en horizontal */
+    justify-content: space-between; /* Separa el logo de los enlaces */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 15px 5%; /* Espaciado interno del nav */
+    position: static; /* Posición fija según tu código */
+    top: 0; 
+    border-bottom: 3px solid #2ecc71; /* Línea verde esmeralda inferior */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+#titulo-nav {
+    color: #ffffff; /* Color blanco para el título */
+    margin: 0; 
+    font-style: italic; /* Texto inclinado deportivo */
+}
+
+#titulo-nav span {
+    color: #2ecc71; /* Color verde para el texto resaltado */
+}
+
+#lista-navegacion {
+    display: flex; /* Alinea los links en fila */
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+}
+
+#lista-navegacion li a {
+    color: #ffffff; /* Texto blanco para los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    margin-left: 20px; /* Separación entre botones */
+    padding: 5px 10px;
+    transition: 0.3s ease; /* Suaviza el cambio de color al pasar el ratón */
+}
+
+#lista-navegacion li a:hover {
+    color: #2ecc71; /* Cambia a verde al pasar el ratón */
+    text-shadow: 0 0 5px #2ecc71; /* Añade un pequeño brillo neón */
+}
+
+#contenedor-web {
+    padding: 50px 10%; /* Margen para que el contenido no pegue a los bordes */
+    text-align: center; /* Centra la imagen y su contenedor */
+}
+
+#marco-imagen {
+    display: inline-block; /* Ajusta la caja al tamaño de la imagen */
+    background-color: #121416; /* Fondo oscuro detrás de la imagen */
+    padding: 15px; /* Espacio entre imagen y borde verde */
+    border: 3px solid #2ecc71; /* Marco verde del clasificatorio */
+    box-shadow: 0 0 25px rgba(46, 204, 113, 0.3); /* Resplandor verde exterior */
+}
+
+#imagen-rondas {
+    max-width: 100%; /* La imagen se adapta al ancho de la pantalla */
+    height: auto; /* Mantiene la proporción original */
+    display: block; /* Evita espacios vacíos debajo de la foto */
+}
+
+#pie-pagina {
+    background-color: #121416; /* Fondo oscuro para el footer */
+    color: #ffffff; 
+    text-align: center; /* Centra todo el texto y logos */
+    padding: 60px 20px; 
+    border-top: 4px solid #2ecc71; /* Línea verde superior */
+    margin-top: 50px; /* Separación con el contenido de arriba */
+}
+
+#redes-sociales img {
+    width: 35px; /* Tamaño de los iconos sociales */
+    margin: 15px;
+    padding: 8px;
+    background-color: #ffffff; /* Fondo blanco para resaltar logos */
+    border: 2px solid #2ecc71; /* Borde verde circular */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    transition: 0.3s; /* Animación de movimiento */
+}
+
+#redes-sociales img:hover {
+    transform: translateY(-5px); /* El logo sube al pasar el ratón */
+    box-shadow: 0 5px 15px #2ecc71; /* Brillo verde intenso */
+}
+
+#copyright {
+    margin-top: 25px;
+    font-size: 0.8rem; /* Tamaño de letra pequeño */
+    color: #72767d; /* Gris apagado para el texto legal */
+}

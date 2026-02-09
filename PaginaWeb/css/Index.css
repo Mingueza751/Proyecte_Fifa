@@ -64,22 +64,83 @@ body {
     text-shadow: 4px 4px 0px #2ecc71; /* Sombra verde desplazada */
 }
 
-/* Secciones principales */
+#contenedor-principal, 
 #contenedor-web {
-    padding: 50px 10%;
+    padding: 50px 10%; /* Espacio interno para que el contenido no toque los bordes */
+    display: flex; /* Activa el modo flexible para alinear elementos */
+    flex-direction: column; /* Apila las secciones una debajo de otra */
+    gap: 30px; /* Separación de 30px entre cada bloque interno */
+}
+
+#introduccion {
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #282b30; /* Color gris oscuro de fondo */
+    padding: 40px; /* Espacio entre el texto y el borde de la caja */
+    border-radius: 8px; /* Redondea las esquinas */
+    border: 1px solid #2ecc71; /* Borde fino de color verde esmeralda */
+}
+
+#texto-introduccion {
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la lectura */
+    color: #f0f0f0; /* Color de letra blanco roto */
+}
+
+#seccion-destacados {
+    display: flex; /* Pone las tarjetas una al lado de la otra */
+    justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen si no caben en la pantalla */
+    gap: 20px; /* Hueco de 20px entre las tarjetas */
+}
+
+#tarjeta-cartel, 
+#tarjeta-premios {
+    background-color: #121416; /* Fondo gris casi negro */
+    border: 2px solid #2ecc71; /* Borde verde característico */
+    padding: 25px; /* Relleno interno de la tarjeta */
+    width: 45%; /* La tarjeta ocupa casi la mitad del ancho */
+    min-width: 280px; /* Evita que se encoja demasiado en móviles */
+    text-align: center; /* Centra el contenido de la tarjeta */
+    box-shadow: 8px 8px 0px rgba(46, 204, 113, 0.2); /* Sombra verde rígida "estilo gamer" */
+    transition: 0.3s ease; /* Suaviza el movimiento al pasar el ratón */
+}
+
+#tarjeta-cartel:hover, 
+#tarjeta-premios:hover {
+    transform: translateY(-10px); /* Sube la tarjeta 10px al pasar el ratón */
+    box-shadow: 12px 12px 0px #2ecc71; /* La sombra se vuelve sólida y más grande */
+}
+
+#boton-cartel, 
+#boton-premios {
+    display: inline-block; /* Permite dar tamaño y margen al enlace */
+    margin-top: 20px; /* Separa el botón del texto superior */
+    padding: 10px 25px; /* Tamaño del botón */
+    background-color: #2ecc71; /* Fondo verde esmeralda */
+    color: #121416; /* Texto oscuro para que resalte */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Esquinas del botón suaves */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    transition: 0.3s; /* Suaviza el cambio de color al tocarlo */
+}
+
+#boton-cartel:hover, 
+#boton-premios:hover {
+    background-color: #ffffff; /* El fondo cambia a blanco */
+    color: #000000; /* El texto cambia a negro puro */
 }
 
 #clasificatorio {
-    background-color: #2f3136; /* Gris intermedio */
-    padding: 35px;
-    border: 2px solid #2ecc71; /* Borde verde suave */
-    border-radius: 8px;
-    box-shadow: 10px 10px 0px rgba(46, 204, 113, 0.2); /* Sombra verde suave */
+    background-color: #2f3136; /* Color de fondo ligeramente distinto */
+    padding: 40px; /* Espacio interior del bloque */
+    border: 3px solid #2ecc71; /* Borde verde un poco más grueso */
+    border-radius: 10px; /* Esquinas redondeadas */
+    text-align: center; /* Centra todo el contenido */
 }
 
-#clasificatorio h2 {
-    color: #2ecc71;
-    margin-bottom: 15px;
+#clasificatorio p {
+    color: #ffffff; /* Color de texto blanco puro */
+    font-style: italic; /* Pone el texto en cursiva */
 }
 
 /* Footer */
